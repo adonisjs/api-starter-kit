@@ -1,6 +1,6 @@
 import { defineConfig } from '@adonisjs/core/bodyparser'
 
-export default defineConfig({
+const bodyParserConfig = defineConfig({
   /**
    * The bodyparser middleware will parse the request body
    * for the following HTTP methods.
@@ -51,3 +51,5 @@ export default defineConfig({
     types: ['multipart/form-data'],
   },
 })
+
+export default bodyParserConfig

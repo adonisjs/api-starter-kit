@@ -1,6 +1,7 @@
 # Dependencies and AdonisJS build
 node_modules
 build
+tmp
 
 # Secrets
 .env
@@ -9,8 +10,7 @@ build
 .env.development.local
 
 # Frontend assets compiled code
-public/hot
-public/build
+public/assets
 
 # Build tools specific
 npm-debug.log
@@ -20,3 +20,6 @@ yarn-error.log
 .fleet
 .idea
 .vscode
+
+# Platform specific
+.DS_Store
