@@ -49,6 +49,7 @@
   },
   "dependencies": {
     "@adonisjs/core": "^6.1.5-38",
+    "@vinejs/vine": "^1.7.0",
     "reflect-metadata": "^0.2.1"
   },
   "eslintConfig": {
