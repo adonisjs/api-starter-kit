@@ -48,8 +48,11 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
+    "@adonisjs/auth": "^9.0.0-10",
     "@adonisjs/core": "^6.1.5-38",
     "@adonisjs/cors": "^2.1.1",
+    "@adonisjs/lucid": "^19.0.0-8",
+    "@adonisjs/session": "^7.0.0-15",
     "@vinejs/vine": "^1.7.0",
     "reflect-metadata": "^0.2.1"
   },
