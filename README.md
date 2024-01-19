@@ -13,7 +13,6 @@ On top of the framework core and dev-tooling, the following features are enabled
 
 - Lucid ORM ( Installed, but not configured )
 - Auth module ( Installed, but not configured )
-- Session package ( Installed, but not configured )
 - CORS
 - VineJS for validations
 
@@ -25,12 +24,12 @@ You can create a new app using the `api` boilerplate by executing the following 
 - Install dependencies
 - Copy `.env.example` to `.env`
 - Set app key using `node ace generate:key` command.
-- Configure `@adonisjs/session` package.
 - Configure `@adonisjs/lucid` package.
+- Install and configure `@adonisjs/session` package (if using auth session guard).
 - Configure `@adonisjs/auth` package.
 
 ```sh
-npm init adonisjs -- -K="api"
+npm init adonisjs -- -K=api
 ```
 
 ### Configuring Lucid database dialect
@@ -38,7 +37,7 @@ npm init adonisjs -- -K="api"
 By default, the `npm init adonisjs` command configures Lucid to use `sqlite`. However, you can define a custom database dialect as follows.
 
 ```sh
-npm init adonisjs -- -K="api" --db=postgres
+npm init adonisjs -- -K=api --db=postgres
 ```
 
 Available options for the `--db` flag.
@@ -53,11 +52,11 @@ Available options for the `--db` flag.
 By default, the `npm init adonisjs` command configures the Auth package to use `session` guard. However, you can define a custom auth guard as follows.
 
 ```sh
-npm init adonisjs -- -K="api" --auth-guard=oat
+npm init adonisjs -- -K=api --auth-guard=access_tokens
 ```
 
 Available options for the `--auth-guard` flag.
 
 - session
 - basic_auth
-- oat
+- access_tokens
