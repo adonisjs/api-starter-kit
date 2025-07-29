@@ -8,9 +8,15 @@
 */
 
 import router from '@adonisjs/core/services/router'
+import { middleware } from './kernel.js'
 
-router.get('/', async () => {
-  return {
-    hello: 'world',
-  }
-})
+router
+  .group(() => {
+    router.get('/', async () => {
+      return {
+        hello: 'world',
+      }
+    })
+  })
+  .use(middleware.forceJsonResponse())
+  .as('api')
